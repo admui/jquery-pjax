@@ -47,7 +47,7 @@ Download and include `jquery.pjax.js` in your web page:
 
 下载 `jquery.pjax.js` 插件并且在你的的页面中引用：
 
-```
+``` bash
 curl -LO https://raw.github.com/defunkt/jquery-pjax/master/jquery.pjax.js
 ```
 
@@ -91,7 +91,7 @@ the page layout. Here is an example of how this might be done in Ruby on Rails:
 
 理论上，你的服务器应该通过查看特定的 `X-PJAX` HTTP头来检查pjax请求，并且通过加载到的HTML替换容器元素（在我们的例子中是 `#pajx-container`）的内容来渲染，没有其余的页面布局。下面的例子是在Ruby on Rails中的做法：
 
-```
+``` ruby
 def index
   if request.headers['X-PJAX']
     render :layout => false
