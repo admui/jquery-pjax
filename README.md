@@ -36,7 +36,7 @@ pjax 依赖于jQuery 1.8或者更高版本。
 ### 通过npm安装
 ### npm
 
-```
+```bash
 $ npm install jquery-pjax
 ```
 
